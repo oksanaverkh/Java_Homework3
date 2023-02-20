@@ -1,6 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "lombok-1.18.24.jar"
-    ]
-}
