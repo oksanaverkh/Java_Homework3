@@ -11,7 +11,7 @@ public class Task1 {
         Goods1 item4 = new Goods1("Flour vysshiy", 80, 2);
         Goods1 item5 = new Goods1("Green tea vysshiy", 100, 2);
         Goods1 item6 = new Goods1("Black pepper vysshiy", 90, 3);
-        Goods1 item7 = new Goods1("Non-filtered beer", 200, 4);
+        Goods1 item7 = new Goods1("Non-filtered beer", 3000, 4);
 
         List<Goods1> goodslist = new ArrayList<>();
         goodslist.add(item1);
@@ -36,7 +36,8 @@ public class Task1 {
         }
 
         for (int i = 0; i < goodslist.size(); i++) {
-            if (goodslist.get(i).getPrice()==maxPrice) {
+            if ((goodslist.get(i).getGrade().equals(1) || goodslist.get(i).getGrade().equals(2))
+                    && goodslist.get(i).getPrice().equals(maxPrice)) {
                 maxPriceGoods.add(goodslist.get(i).getName());
             }
         }
